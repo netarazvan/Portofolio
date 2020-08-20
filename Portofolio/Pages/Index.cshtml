@@ -1,0 +1,28 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<script src="~/js/site.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+<link href="~/css/Style.css" rel="stylesheet" />
+<div class="Canvas">
+    <div class="text-center">
+        <h1 class="intro">Hi, I'm Razvan and i'm struggling to become a .NET developer. <a style="text-decoration:none;" href="/Projects"> Here </a> is my work. </h1>
+    </div>
+    <div class="learn-more">
+        <a style="text-decoration:none;" href="#about-me">
+            More about me below
+            <br />
+            &#9660;
+        </a>
+    </div>
+    <div class="about-me" id="about-me">
+        I am a student of the Faculty of Automatics, Computers and Electronics at the University of Craiova in the 4th year of the Automation and Applied Informatics specialization.
+        <br /><br />
+        Being passionate about programmig, I also started working on my own applications and learning different programming languages.
+        <br /><br />
+        During my student years I also participated in volunteering, workshops organized by companies from Craiova partnering with the faculty.
+    </div>
+</div>

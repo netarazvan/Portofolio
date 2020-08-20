@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Portofolio</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    
+</head>
+<body>
+    <header>
+        <div class="menu">
+            
+                
+                <a name="index" class="menu-item" asp-area="" asp-page="/Index">Home</a>
+                
+                <a name="projects" class="menu-item" asp-area="" asp-page="/Projects">Projects</a>
+                <a name="contact" class="menu-item" asp-area="" asp-page="/Contact">Contact</a>
+                <a class="menu-item" style="float:right;border-bottom:none;margin-right:10px" href="https://github.com/netarazvan">
+                    <img style="width:35px; filter: invert(1);" src="~/res/GITHUB.png" />
+                </a>
+        </div>   
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+   
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

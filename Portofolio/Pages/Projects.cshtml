@@ -1,0 +1,33 @@
+﻿@page
+@model ProjectsModel
+@{
+    ViewData["Title"] = "My work";
+}
+<h1>@ViewData["Title"]</h1>
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+<link href="~/css/Style.css" rel="stylesheet" />
+
+<div class="project-container">
+    @for (int i = 0; i < 10; i++)
+    {
+        if (Model.projects[i, 0] != null)
+        {
+            <div class="project-layout">
+                <div style="padding-bottom:10px; font-size:23px; font-weight:bold;">
+                    <span class="project-desc">@Model.projects[i, 0]</span>
+                    @if (@Model.projects[i, 1] != null)
+                    {
+                        <a href="@Model.projects[i,1]">
+                            <img class="img-git" src="~/res/GITHUB.png" />
+                        </a>
+                    }
+                </div>
+                <img class="img-app" src=@Model.projects[i, 2] />
+                <span class="project-desc">@Model.projects[i, 3]</span>
+            </div>
+        }
+        
+
+    }
+</div>
+

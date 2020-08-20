@@ -1,0 +1,144 @@
+﻿body {
+    background-image: url('../res/background.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+html{
+    scroll-behavior:smooth;
+}
+
+.text-center {
+    margin-top: 17%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 5%;
+    border-radius: 8px;
+    animation: fadeIn;
+    animation-duration: 1s;
+}
+
+.intro {
+    color: lightgrey;
+    font-family: aquire-bw0ox;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+h1 {
+    font-family: aquire-bw0ox;
+    font-weight:bold;
+    text-align:center;
+    color:lightgrey;
+    margin-top:50px;
+}
+h5 {
+    font-family: aquire-bw0ox;
+    font-weight: bold;
+    text-align: center;
+    color: lightgrey;
+    font-size:15px;
+    color:lightgreen;
+    
+}
+textarea{
+    resize:none;
+
+}
+.contact-area {
+    background-color: rgba(0,0,0,0.7);
+    text-align: center;
+    margin-left: 27%;
+    margin-right: 27%;
+    margin-top: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border-bottom: 2px solid red;
+    animation: fadeInUp;
+    animation-duration: 1s;
+}
+.contact-btn{
+    width:50px;
+    margin-left:45px;
+    margin-right:45px;
+    transition:0.3s;
+}
+.contact-btn:hover{
+    width:120px;
+}
+
+
+.project-layout {
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: rgba(0,0,0,0.7);
+    padding: 1%;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 500px;
+    height: 500px;
+    float: left;
+    border-bottom: 2px solid red;
+    animation:fadeInUp;
+    animation-duration:1s;
+}
+.img-app
+{
+    
+    display:block;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:30px;
+}
+.project-desc {
+    font-family:aquire-bw0ox;
+    color:lightgrey;
+    
+    
+}
+.project-container {
+   
+    
+}
+@font-face {
+    font-family: 'aquire-bw0ox';
+    src: url('../res/aquire-bw0ox.otf') format('opentype');
+}
+.img-git {
+    
+    filter: invert(1);
+    display:inline-block;
+    float:right;
+    width:30px;
+    
+}
+.about-me{
+    margin-top:35%;
+    text-align:center;
+    font-family:aquire-bw0ox;
+    color:lightgray;
+    font-size:25px;
+    font-weight:bold;
+    transition:opacity 2s;
+    padding-bottom:10%;
+    margin-left:15%;
+    margin-right:15%;
+}
+.learn-more {
+    text-align: center;
+    font-family: aquire-bw0ox;
+    text-decoration: none;
+    color: lightgrey;
+    margin-top: 20%;
+    font-size: 20px;
+    transition: 1s;
+    animation: fadeIn;
+    animation-duration: 1s;
+    
+}
+.learn-more:hover{
+    font-size:30px;
+}
+
